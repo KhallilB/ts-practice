@@ -1,4 +1,4 @@
-# React + TypeScript Senior Interview Prep
+# React + TypeScript Interview Prep
 
 This repo contains a curated set of **10 hands‑on mini projects** designed to prepare senior frontend engineers for interviews involving **React + TypeScript**. Each project takes roughly **1 hour** and focuses on a critical concept expected of a senior engineer. These challenges emphasize **type safety**, **reusability**, **performance**, **composition**, and **best practices** with modern React.
 
