@@ -1,101 +1,96 @@
-# TsPractice
+# React + TypeScript Senior Interview Prep
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+This repo contains a curated set of **10 hands‑on mini projects** designed to prepare senior frontend engineers for interviews involving **React + TypeScript**. Each project takes roughly **1 hour** and focuses on a critical concept expected of a senior engineer. These challenges emphasize **type safety**, **reusability**, **performance**, **composition**, and **best practices** with modern React.
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is ready ✨.
+---
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/tutorials/react-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+## 🔧 How to Use This Repo
 
-## Run tasks
+Each project lives in its own directory under `/projects/`:
 
-To run the dev server for your app, use:
-
-```sh
-npx nx serve ts-practice
+```bash
+projects/
+  01-generic-list/
+  02-performance-list/
+  03-use-debounce/
+  04-tabs-ui/
+  05-theme-context/
+  06-form-validation/
+  07-error-boundary/
+  08-testing-suite/
+  09-data-fetcher/
+  10-polymorphic-button/
 ```
 
-To create a production bundle:
+Inside each folder you will find:
 
-```sh
-npx nx build ts-practice
-```
+* A **README.md** (the challenge brief)
+* Optional **starter code** (when relevant)
+* A deliberately failing **test suite** (for testing‑focused projects)
+* A **solution** branch with one possible implementation
 
-To see all available targets to run for a project, run:
+Clone the repo, check out any project folder, start a timer, and code away.
 
-```sh
-npx nx show project ts-practice
-```
+---
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+## 🧠 What You’ll Practice
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+| Area                       | Topics Covered                                                          |
+| -------------------------- | ----------------------------------------------------------------------- |
+| **React Fundamentals**     | Hooks, context, props, component patterns                               |
+| **Advanced TypeScript**    | Generics, utility types, discriminated unions, keyof, conditional types |
+| **Component Architecture** | Polymorphism, compound components, controlled/uncontrolled behavior     |
+| **State Management**       | Local vs global state, Context API, Zustand/Redux integration           |
+| **Performance**            | Memoization, code splitting, lazy loading, virtualization               |
+| **Testing**                | Jest, React Testing Library, mocking, assertions                        |
+| **Error Handling**         | Error boundaries, runtime and async edge cases                          |
+| **API Integration**        | REST fetch, typed interfaces, error/loading handling, React Query       |
+| **Reusable Hooks**         | `useDebounce`, `usePrevious`, `useThrottle`                             |
 
-## Add new projects
+---
 
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
+## 📂 Project Index
 
-Use the plugin's generator to create new projects.
+|  # | Folder                  | Title                      | Main Concepts                                  |
+| -: | :---------------------- | :------------------------- | :--------------------------------------------- |
+|  1 | `01-generic-list`       | Generic List Component     | Generics, utility types, prop typing           |
+|  2 | `02-performance-list`   | Performance Optimized List | `useMemo`, `React.memo`, `React.lazy`          |
+|  3 | `03-use-debounce`       | Debounced Search Hook      | Custom hooks, generics, debounce logic         |
+|  4 | `04-tabs-ui`            | Compound Tabs UI           | Compound components, Context API               |
+|  5 | `05-theme-context`      | Global State with Context  | Context, type‑safe global state, theming       |
+|  6 | `06-form-validation`    | Form with Validation       | React Hook Form, validation, Zod/Yup           |
+|  7 | `07-error-boundary`     | Error Boundary             | Class components, error handling, fallback UIs |
+|  8 | `08-testing-suite`      | Component & Hook Testing   | RTL, Jest, unit vs integration tests           |
+|  9 | `09-data-fetcher`       | Data Fetcher               | `useEffect`, loading states, typed APIs        |
+| 10 | `10-polymorphic-button` | Polymorphic Button         | Discriminated unions, polymorphism, `as` prop  |
 
-To generate a new application, use:
+---
 
-```sh
-npx nx g @nx/react:app demo
-```
+## 🧭 Suggested Flow
 
-To generate a new library, use:
+1. Start with **Projects 1‑3** to reinforce TypeScript fundamentals and hook patterns.
+2. Move to **Projects 4‑6** for component architecture and form handling.
+3. Tackle **Projects 7‑9** to cover robustness, testing, and real‑world data.
+4. Finish with **Project 10** to cement advanced prop typing and composition.
 
-```sh
-npx nx g @nx/react:lib mylib
-```
+---
 
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
+## 📌 General Interview Tips
 
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+* **Narrate your thinking.** Interviewers care more about your reasoning than error‑free typing.
+* **Type confidently.** Master generics, utility types, unions, and conditional types.
+* **Practice without tools.** Disable autocomplete or linting on a run‑through to mimic whiteboard pressure.
+* **Show trade‑offs.** Senior engineers weigh performance, testability, readability, and flexibility.
 
-## Set up CI!
+---
 
-### Step 1
+## 🧰 Requirements
 
-To connect to Nx Cloud, run the following command:
+* Node 18+
+* TypeScript 5+
+* React 18+
+* (Optional per project) React Hook Form, Zod, React Query, Jest, RTL, etc.
 
-```sh
-npx nx connect
-```
+---
 
-Connecting to Nx Cloud ensures a [fast and scalable CI](https://nx.dev/ci/intro/why-nx-cloud?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) pipeline. It includes features such as:
-
-- [Remote caching](https://nx.dev/ci/features/remote-cache?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task distribution across multiple machines](https://nx.dev/ci/features/distribute-task-execution?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Automated e2e test splitting](https://nx.dev/ci/features/split-e2e-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task flakiness detection and rerunning](https://nx.dev/ci/features/flaky-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-### Step 2
-
-Use the following command to configure a CI workflow for your workspace:
-
-```sh
-npx nx g ci-workflow
-```
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/getting-started/tutorials/react-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+> "Simplicity is the soul of efficiency." – Austin Freeman

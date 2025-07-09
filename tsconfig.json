@@ -4,7 +4,34 @@
   "files": [],
   "references": [
     {
-      "path": "./apps/ts-practice"
+      "path": "./apps/01-generic-list"
+    },
+    {
+      "path": "./apps/02-preformance-list"
+    },
+    {
+      "path": "./apps/03-use-debounce"
+    },
+    {
+      "path": "./apps/04-tabs-ui"
+    },
+    {
+      "path": "./apps/05-theme-context"
+    },
+    {
+      "path": "./apps/06-form-validation"
+    },
+    {
+      "path": "./apps/07-error-boundry"
+    },
+    {
+      "path": "./apps/08-testing-suite"
+    },
+    {
+      "path": "./apps/09-data-fetcher"
+    },
+    {
+      "path": "./apps/10-polymorphic-button"
     }
   ]
 }
