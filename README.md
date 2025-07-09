@@ -6,10 +6,10 @@ This repo contains a curated set of **10 hands‑on mini projects** designed to 
 
 ## 🔧 How to Use This Repo
 
-Each project lives in its own directory under `/projects/`:
+Each project lives in its own directory under `/apps/`:
 
 ```bash
-projects/
+apps/
   01-generic-list/
   02-performance-list/
   03-use-debounce/
